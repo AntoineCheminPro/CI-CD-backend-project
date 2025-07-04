@@ -3,6 +3,9 @@ name: Deploy (Backend)
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
+    types: [opened, reopened, synchronize]
 
 jobs:
   deploy:
@@ -40,4 +43,4 @@ jobs:
 
       - name: Deploy to production
 
-        run: echo "Déploiement en production réussi" 
+        run: echo "Déploiement en production réussi !" 
