@@ -39,4 +39,5 @@ jobs:
           docker push ${{ secrets.DOCKER_USERNAME }}/bobapp-backend:latest
 
       - name: Deploy to production
-        run: echo "Déploiement en production réussi !" 
+
+        run: echo "Déploiement en production réussi" 
